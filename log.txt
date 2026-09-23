@@ -1,0 +1,11 @@
+Changes made 2026-05-14
+- Fixed issue in which the inputted pydatafile and word template names are not used in actual run. Added a line to update the path variables.
+- Added plt.close(fig) to function insert_line_graph for reducing memory usage by closing plot after use.
+
+
+Changes made 2026-09-15
+- Made formatting changes per AW's email dated 14-9-2026
+> Wordings
+> Currency symbol used for amounts
+> Dates now in UK format
+> Line graph
