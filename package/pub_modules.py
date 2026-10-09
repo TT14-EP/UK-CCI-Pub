@@ -135,12 +135,13 @@ def generate_cci_summary(df, rn, wdtemplate_path, pdffolder_path):
     print("***** Data row defined as " + str(r) + " successfully *****\n")
 
     ### 3b. For entity descriptions
+    #9.10.2026: old statement (an open-ended Irish collective asset management vehicle which is constituted as an umbrella fund with segregated liability between sub-funds, with variable capital)
     if datarow['FundType'] == 'RIAIF':
-        pro_type_stylised = 'a Retail Investor Alternative Investment Fund (RIAIF), ' \
-                            'an open-ended Irish collective asset management vehicle which is constituted as an umbrella fund with segregated liability between sub-funds, with variable capital'
+        pro_type_stylised = 'a Retail Investor Alternative Investment Fund (RIAIF) ' \
+                            'based in Ireland. It is part of an umbrella fund structure, where each sub-fund\'s assets and liabilities are kept separate from those of other sub-funds'
     elif datarow['FundType'] == 'UCITS':
-        pro_type_stylised = 'a Undertakings for the Collective Investment in Transferable Securities (UCITS), ' \
-                            'an open-ended Irish collective asset management vehicle which is constituted as an umbrella fund with segregated liability between sub-funds, with variable capital'
+        pro_type_stylised = 'a Undertakings for the Collective Investment in Transferable Securities (UCITS) ' \
+                            'based in Ireland. It is part of an umbrella fund structure, where each sub-fund\'s assets and liabilities are kept separate from those of other sub-funds'
     print("***** Entity descriptions defined successfully *****\n")
 
     ### 3c. For rep class table
